@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantiva Product Workspace | AI Forecasting & Optimization Engine</title>
+  <meta name="description" content="Explore Quantiva's end-to-end platform architecture: dataset ingestion, GPU-accelerated forecasting, objective constraint optimization, and auditable scenario histories.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/brand/favicon-192.png">
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
+  <link rel="stylesheet" href="/src/styles.css">
+</head>
+<body>
+
+  <!-- Shared Header Navigation -->
+  <header class="header-nav" id="mainHeader">
+    <div class="nav-container">
+      <a href="/" class="nav-logo" aria-label="Quantiva Homepage">
+        <img src="/assets/brand/logo.png" alt="Quantiva" class="nav-logo-img" width="154" height="40">
+      </a>
+
+      <!-- Desktop Nav Links (Shared: links back to landing page sections) -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="/#use-cases" class="nav-link">Use Cases</a></li>
+          <li><a href="/#capabilities" class="nav-link">Capabilities</a></li>
+          <li><a href="/#pricing" class="nav-link">Pricing</a></li>
+          <li><a href="/#about" class="nav-link">About</a></li>
+          <li><a href="/#faq" class="nav-link">FAQ</a></li>
+          <li><a href="/#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://portal.quantiva.lk" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+          Go to Dashboard
+          <svg class="btn-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open mobile menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-content">
+      <div class="mobile-drawer-header">
+        <a href="/" class="nav-logo">
+          <img src="/assets/brand/logo.png" alt="Quantiva" class="nav-logo-img" width="154" height="40">
+        </a>
+        <button class="mobile-drawer-close" id="drawerClose" aria-label="Close mobile menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="/" class="mobile-nav-link">Home (Landing)</a></li>
+        <li><a href="/#use-cases" class="mobile-nav-link">Use Cases</a></li>
+        <li><a href="/#capabilities" class="mobile-nav-link">Capabilities</a></li>
+        <li><a href="/#pricing" class="mobile-nav-link">Pricing</a></li>
+        <li><a href="/#about" class="mobile-nav-link">About</a></li>
+        <li><a href="/#faq" class="mobile-nav-link">FAQ</a></li>
+        <li><a href="/#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-actions">
+        <a href="https://portal.quantiva.lk" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Go to Dashboard</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- 1. PRODUCT HERO SECTION -->
+    <section class="section-bg-main" style="padding: 100px 0 60px 0; border-bottom: 1px solid var(--color-primary-40); position: relative; overflow: hidden;">
+      <div style="position: absolute; top: -200px; right: -200px; width: 600px; height: 600px; background: radial-gradient(circle, rgba(34, 57, 111, 0.4) 0%, transparent 70%); border-radius: 50%; filter: blur(60px); pointer-events: none;"></div>
+      <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
+        
+        <!-- Left Content -->
+        <div class="fade-up">
+          <div class="badge" style="background: transparent; border: none; color: var(--color-accent); font-weight: 700; letter-spacing: 0.1em; padding: 0; box-shadow: none; margin-bottom: 16px; font-size: 0.85rem;">
+            PLATFORM DEEP-DIVE
+          </div>
+          <h1 style="font-size: clamp(2.5rem, 4vw, 3.5rem); line-height: 1.1; margin-bottom: 24px;">
+            The Complete AI Optimization Workspace
+          </h1>
+          <p style="font-size: 1.1rem; color: var(--color-accent-85); line-height: 1.6; margin-bottom: 32px; max-width: 500px;">
+            Connect raw quantitative datasets directly to model configurations, mathematically rigorous optimization scenarios, and transparent audit trails in a unified terminal environment.
+          </p>
+          <div style="display: flex; gap: 16px;">
+            <a href="https://portal.quantiva.lk" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 14px 28px; border-radius: 8px;">
+              Launch Dashboard
+              <svg class="btn-arrow" style="margin-left: 8px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#modules" class="btn btn-outline" style="padding: 14px 28px; border-radius: 8px;">
+              Explore Modules
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Visual (Abstract Architecture / Interface) -->
+        <div class="fade-up delay-200" style="position: relative;">
+          <div style="background: var(--color-surface); border: 1px solid var(--color-primary-60); border-radius: 20px; padding: 24px; box-shadow: 0 25px 60px rgba(1, 7, 54, 0.8);">
+            
+            <!-- Floating Data Badges -->
+            <div style="position: absolute; top: -15px; right: -15px; background: #28c76f; color: #010736; font-weight: 700; font-size: 0.8rem; padding: 8px 16px; border-radius: 20px; box-shadow: 0 10px 20px rgba(40, 199, 111, 0.3); transform: rotate(5deg);">
+              Active Scenarios
+            </div>
+            
+            <!-- Abstract Dashboard UI -->
+            <div style="display: flex; flex-direction: column; gap: 16px;">
+              <!-- Header Mock -->
+              <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--color-primary-40); padding-bottom: 12px;">
+                <div style="display: flex; gap: 8px;">
+                  <span style="width: 12px; height: 12px; border-radius: 50%; background: #fc5c65;"></span>
+                  <span style="width: 12px; height: 12px; border-radius: 50%; background: #fd9644;"></span>
+                  <span style="width: 12px; height: 12px; border-radius: 50%; background: #26de81;"></span>
+                </div>
+                <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-accent-75);">portal.quantiva.lk / ENTERPRISE</div>
+              </div>
+              
+              <!-- Content Grid Mock -->
+              <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 16px;">
+                <!-- Sidebar -->
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                  <div style="height: 8px; background: var(--color-primary); border-radius: 4px; width: 80%;"></div>
+                  <div style="height: 8px; background: var(--color-primary-60); border-radius: 4px; width: 60%;"></div>
+                  <div style="height: 8px; background: var(--color-primary-60); border-radius: 4px; width: 70%;"></div>
+                  <div style="height: 8px; background: var(--color-primary-60); border-radius: 4px; width: 50%;"></div>
+                  
+                  <div style="margin-top: 24px; padding: 12px; background: var(--color-bg); border-radius: 8px; border: 1px solid var(--color-primary);">
+                    <div style="font-size: 0.7rem; color: var(--color-accent); font-family: var(--font-mono); margin-bottom: 6px;">COMPUTE LOAD</div>
+                    <div style="display: flex; gap: 4px; align-items: flex-end; height: 30px;">
+                      <div style="width: 15%; background: var(--color-primary); height: 40%;"></div>
+                      <div style="width: 15%; background: var(--color-primary); height: 60%;"></div>
+                      <div style="width: 15%; background: var(--color-primary); height: 50%;"></div>
+                      <div style="width: 15%; background: #28c76f; height: 90%;"></div>
+                      <div style="width: 15%; background: var(--color-primary); height: 70%;"></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Main Area -->
+                <div style="background: var(--color-bg); border-radius: 12px; border: 1px solid var(--color-primary-40); padding: 16px; display: flex; flex-direction: column; gap: 12px;">
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div style="height: 12px; background: var(--color-accent); border-radius: 6px; width: 40%;"></div>
+                    <div style="height: 12px; background: var(--color-primary); border-radius: 6px; width: 20%;"></div>
+                  </div>
+                  <div style="background: radial-gradient(circle at center, rgba(34, 57, 111, 0.4) 0%, transparent 100%); height: 120px; border-radius: 8px; display: flex; align-items: center; justify-content: center; border: 1px dashed var(--color-primary-60);">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  </div>
+                  <div style="display: flex; gap: 8px;">
+                    <div style="flex: 1; height: 40px; background: var(--color-surface); border-radius: 6px; border: 1px solid var(--color-primary-40);"></div>
+                    <div style="flex: 1; height: 40px; background: var(--color-surface); border-radius: 6px; border: 1px solid var(--color-primary-40);"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- 2. ANIMATED WORKFLOW DIAGRAM -->
+    <section class="section-bg-surface" id="workflow-architecture">
+      <div class="container">
+        <div class="section-header fade-up">
+          <div class="badge">Connected Topology</div>
+          <h2>Interactive Node-Based Analytical Flow</h2>
+          <p>
+            A continuous pipeline linking data ingestion directly through statistical forecasting and constrained resource optimization. Click any node to inspect parameters.
+          </p>
+        </div>
+
+        <!-- Connected Nodes Row -->
+        <div class="workflow-nodes-container fade-up">
+          <div class="workflow-connector-line"></div>
+
+          <!-- Node 1 -->
+          <div class="workflow-node active" data-step="0">
+            <div class="workflow-node-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+            </div>
+            <div class="workflow-node-title">Datasets</div>
+            <div class="workflow-node-stat">Time-Series</div>
+          </div>
+
+          <!-- Node 2 -->
+          <div class="workflow-node" data-step="1">
+            <div class="workflow-node-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+            </div>
+            <div class="workflow-node-title">Forecasting Projects</div>
+            <div class="workflow-node-stat">Model Tuning</div>
+          </div>
+
+          <!-- Node 3 -->
+          <div class="workflow-node" data-step="2">
+            <div class="workflow-node-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+            </div>
+            <div class="workflow-node-title">Forecast Results</div>
+            <div class="workflow-node-stat">MAPE & Bands</div>
+          </div>
+
+          <!-- Node 4 -->
+          <div class="workflow-node" data-step="3">
+            <div class="workflow-node-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+            </div>
+            <div class="workflow-node-title">Optimization Scenarios</div>
+            <div class="workflow-node-stat">Constraint Solver</div>
+          </div>
+
+          <!-- Node 5 -->
+          <div class="workflow-node" data-step="4">
+            <div class="workflow-node-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <div class="workflow-node-title">Comparison & History</div>
+            <div class="workflow-node-stat">Permanent Ledger</div>
+          </div>
+        </div>
+
+        <!-- Node Details Dynamic Box -->
+        <div class="card fade-up" style="max-width: 860px; margin: 0 auto; background: var(--color-bg); border-color: var(--color-primary);">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+            <h3 id="workflowActiveTitle" style="color: var(--color-accent); font-size: 1.25rem;">1. Datasets & Variables</h3>
+            <span id="workflowActiveStat" class="badge" style="font-size: 0.72rem;">Schema Validated: 100% | Latency: 1.4s</span>
+          </div>
+          <p id="workflowActiveDesc" class="text-muted" style="font-size: 0.95rem;">
+            Ingest financial, energy, and supply chain time-series data with schema validation, missing value imputation, and automated variable classification.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. MODULE DEEP-DIVES (6 ALTERNATING ROWS WITH DISTINCT ANIMATED GRAPHICS) -->
+    <section class="section-bg-main" id="modules">
+      <div class="container">
+        <div class="section-header fade-up">
+          <div class="badge">Functional Capabilities</div>
+          <h2>Six Specialized Analytical Modules</h2>
+          <p>
+            Explore each layer of Quantiva's computational architecture designed for rigorous institutional planning.
+          </p>
+        </div>
+
+        <!-- Module 1: Dataset & Data Management -->
+        <div class="module-row fade-up">
+          <div class="module-info">
+            <div class="badge">Module 01</div>
+            <h3>Dataset & Data Management</h3>
+            <p>
+              Ingest, catalog, and govern high-frequency quantitative time-series data. Maintain transparent metadata across enterprise operational systems.
+            </p>
+            <ul class="module-bullets">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FCF1D0" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Dataset Attributes:</strong> Tracks dataset name, business category, source origins, and description.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FCF1D0" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Variable Taxonomy:</strong> Distinguishes endogenous target metrics from exogenous predictors.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FCF1D0" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Date Ranges & Cadence:</strong> Handles irregular intervals, timezone normalization, and sync schedules.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FCF1D0" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Historical Review:</strong> Inspect raw time-slice snapshots prior to running forecast models.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Graphic: Interactive Data Table with Status Badges -->
+          <div class="module-graphic-panel">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+              <span class="font-mono" style="font-size: 0.8rem; color: var(--color-accent); font-weight: 700;">SCHEMA REGISTRY // DATASETS</span>
+              <div style="display: flex; gap: 6px;">
+                <button class="btn btn-outline btn-sm data-filter-btn active" data-filter="all" style="padding: 4px 10px; font-size: 0.75rem;">All</button>
+                <button class="btn btn-outline btn-sm data-filter-btn" data-filter="target" style="padding: 4px 10px; font-size: 0.75rem;">Target</button>
+                <button class="btn btn-outline btn-sm data-filter-btn" data-filter="exogenous" style="padding: 4px 10px; font-size: 0.75rem;">Exogenous</button>
+              </div>
+            </div>
+
+            <div style="overflow-x: auto;">
+              <table style="width: 100%; border-collapse: collapse; font-family: var(--font-mono); font-size: 0.82rem;">
+                <thead>
+                  <tr style="border-bottom: 1px solid var(--color-primary-40); color: var(--color-accent-60); text-align: left;">
+                    <th style="padding: 8px 10px;">VARIABLE</th>
+                    <th style="padding: 8px 10px;">ROLE</th>
+                    <th style="padding: 8px 10px;">FREQUENCY</th>
+                    <th style="padding: 8px 10px;">STATUS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="data-sample-row" data-type="target" style="border-bottom: 1px solid var(--color-primary-20);">
+                    <td style="padding: 10px; color: var(--color-accent);">kwh_load_peak</td>
+                    <td style="padding: 10px; color: var(--color-accent-85);">Target Series</td>
+                    <td style="padding: 10px; color: var(--color-accent-75);">Hourly</td>
+                    <td style="padding: 10px;"><span style="color: var(--color-accent); background: rgba(34, 57, 111, 0.5); padding: 2px 8px; border-radius: 4px;">SYNCED ✓</span></td>
+                  </tr>
+                  <tr class="data-sample-row" data-type="exogenous" style="border-bottom: 1px solid var(--color-primary-20);">
+                    <td style="padding: 10px; color: var(--color-accent);">ambient_temp_c</td>
+                    <td style="padding: 10px; color: var(--color-accent-85);">Exogenous</td>
+                    <td style="padding: 10px; color: var(--color-accent-75);">Hourly</td>
+                    <td style="padding: 10px;"><span style="color: var(--color-accent); background: rgba(34, 57, 111, 0.5); padding: 2px 8px; border-radius: 4px;">SYNCED ✓</span></td>
+                  </tr>
+                  <tr class="data-sample-row" data-type="target" style="border-bottom: 1px solid var(--color-primary-20);">
+                    <td style="padding: 10px; color: var(--color-accent);">sku_replenish_vol</td>
+                    <td style="padding: 10px; color: var(--color-accent-85);">Target Series</td>
+                    <td style="padding: 10px; color: var(--color-accent-75);">Daily</td>
+                    <td style="padding: 10px;"><span style="color: var(--color-accent); background: rgba(34, 57, 111, 0.5); padding: 2px 8px; border-radius: 4px;">SYNCED ✓</span></td>
+                  </tr>
+                  <tr class="data-sample-row" data-type="exogenous">
+                    <td style="padding: 10px; color: var(--color-accent);">container_tariff_idx</td>
+                    <td style="padding: 10px; color: var(--color-accent-85);">Exogenous</td>
+                    <td style="padding: 10px; color: var(--color-accent-75);">Daily</td>
+                    <td style="padding: 10px;"><span style="color: var(--color-accent); background: rgba(34, 57, 111, 0.5); padding: 2px 8px; border-radius: 4px;">SYNCED ✓</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Module 2: Forecasting Projects -->
+        <div class="module-row reversed fade-up">
+          <div class="module-info">
+            <div class="badge">Module 02</div>
+            <h3>Forecasting Projects</h3>
+            <p>
+              Build and orchestrate repeatable forecasting experiments with full parameter governance and automated hyperparameter optimization.
+            </p>
+            <ul class="module-bullets">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FCF1D0" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Target Selection:</strong> Map any quantitative column to your target forecasting objective.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FCF1D0" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Forecast Horizon:</strong> Configure projection spans from short-term 3 months to 24 months.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FCF1D0" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Parameter Tuning:</strong> Select loss functions, seasonality modes, and lag windows.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FCF1D0" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Execution Status:</strong> Real-time pipeline monitoring with GPU acceleration status indicators.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Graphic: Forecast Curve Drawing with Horizon Selector -->
+          <div class="module-graphic-panel">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+              <span class="font-mono" style="font-size: 0.8rem; color: var(--color-accent); font-weight: 700;">PROJECTION HORIZON CONTROLLER</span>
+              <div style="display: flex; gap: 6px;">
+                <button class="btn btn-outline btn-sm horizon-btn" data-horizon="3M" style="padding: 4px 8px; font-size: 0.72rem;">3M</button>
+                <button class="btn btn-outline btn-sm horizon-btn" data-horizon="6M" style="padding: 4px 8px; font-size: 0.72rem;">6M</button>
+                <button class="btn btn-outline btn-sm horizon-btn active" data-horizon="12M" style="padding: 4px 8px; font-size: 0.72rem;">12M</button>
+                <button class="btn btn-outline btn-sm horizon-btn" data-horizon="24M" style="padding: 4px 8px; font-size: 0.72rem;">24M</button>
+              </div>
+            </div>
+
+            <div style="background: var(--color-bg); border: 1px solid var(--color-primary-40); border-radius: 8px; padding: 14px; margin-bottom: 12px; display: flex; justify-content: space-between;">
+              <div>
+                <div class="text-dim font-mono" style="font-size: 0.72rem;">PROJECTED CUMULATIVE VALUE</div>
+                <div id="horizonValue" class="font-mono" style="font-size: 1.25rem; color: var(--color-accent); font-weight: 700;">$72.1M ± 3.8%</div>
+              </div>
+              <div style="text-align: right;">
+                <div class="text-dim font-mono" style="font-size: 0.72rem;">BACKTEST MAPE</div>
+                <div id="horizonMape" class="font-mono" style="font-size: 1.25rem; color: var(--color-accent); font-weight: 700;">3.2%</div>
+              </div>
+            </div>
+
+            <svg viewBox="0 0 460 140" width="100%" height="120" preserveAspectRatio="none">
+              <path d="M 20,110 Q 80,120 140,80 T 230,70" fill="none" stroke="#22396F" stroke-width="2.5"/>
+              <path d="M 230,70 Q 300,50 370,40 T 440,25" fill="none" stroke="#FCF1D0" stroke-width="2.5" stroke-dasharray="4 4"/>
+              <circle cx="230" cy="70" r="4" fill="#FCF1D0"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Module 3: Forecast Results & Analysis -->
+        <div class="module-row fade-up">
+          <div class="module-info">
+            <div class="badge">Module 03</div>
+            <h3>Forecast Results & Analysis</h3>
+            <p>
+              Compare historical ground truth with probabilistic projection cones. Quantify upside risk and downside vulnerability under uncertainty.
+            </p>
+            <ul class="module-bullets">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FCF1D0" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Ground Truth vs Projections:</strong> Visualizes historical data juxtaposed against forecast paths.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FCF1D0" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Confidence Envelopes:</strong> Dynamic 80%, 90%, and 95% certainty intervals for stress-testing.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FCF1D0" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Statistical Metrics:</strong> Out-of-sample MAPE, RMSE, MAE, and directional accuracy indicators.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FCF1D0" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Configuration Benchmarking:</strong> Compare accuracy differences between competing models.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Graphic: Dual-line Chart with Dynamic Confidence Band -->
+          <div class="module-graphic-panel">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <span id="confLevelLabel" class="font-mono" style="font-size: 0.8rem; color: var(--color-accent); font-weight: 700;">95% Confidence Envelope</span>
+              <div style="display: flex; gap: 6px;">
+                <button class="btn btn-outline btn-sm conf-toggle-btn" data-conf="80" style="padding: 3px 8px; font-size: 0.72rem;">80%</button>
+                <button class="btn btn-outline btn-sm conf-toggle-btn" data-conf="90" style="padding: 3px 8px; font-size: 0.72rem;">90%</button>
+                <button class="btn btn-outline btn-sm conf-toggle-btn active" data-conf="95" style="padding: 3px 8px; font-size: 0.72rem;">95%</button>
+              </div>
+            </div>
+
+            <svg viewBox="0 0 600 180" width="100%" height="160" preserveAspectRatio="none">
+              <!-- Grid -->
+              <line x1="20" y1="40" x2="580" y2="40" stroke="rgba(34, 57, 111, 0.3)" stroke-dasharray="2 3"/>
+              <line x1="20" y1="90" x2="580" y2="90" stroke="rgba(34, 57, 111, 0.3)" stroke-dasharray="2 3"/>
+              <line x1="20" y1="140" x2="580" y2="140" stroke="rgba(34, 57, 111, 0.3)" stroke-dasharray="2 3"/>
+
+              <!-- Dynamic Polygon for Confidence Envelope -->
+              <path id="forecastBandPolygon" fill="rgba(252, 241, 208, 0.16)" d="M 280,95 Q 350,70 420,40 Q 500,20 580,10 L 580,155 Q 500,165 420,170 Q 350,150 280,120 Z"/>
+
+              <!-- Historical solid curve -->
+              <path d="M 20,140 Q 90,150 160,110 T 280,105" fill="none" stroke="#22396F" stroke-width="3"/>
+
+              <!-- Forecast dashed line -->
+              <path d="M 280,105 Q 360,75 440,60 T 580,35" fill="none" stroke="#FCF1D0" stroke-width="3" stroke-dasharray="5 5"/>
+
+              <circle cx="280" cy="105" r="4.5" fill="#FCF1D0"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Module 4: Optimization Scenarios -->
+        <div class="module-row reversed fade-up">
+          <div class="module-info">
+            <div class="badge">Module 04</div>
+            <h3>Optimization Scenarios</h3>
+            <p>
+              Transform forecasts into optimal resource decisions. Define multi-parameter objectives subject to operational and capital constraints.
+            </p>
+            <ul class="module-bullets">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FCF1D0" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Multi-Objective Formulation:</strong> Maximize revenue while penalizing risk variance or carbon output.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FCF1D0" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Hard & Soft Constraints:</strong> Impose strict budget ceilings, minimum safety stocks, or grid load limits.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FCF1D0" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Domain Applications:</strong> Resource allocation, inventory replenishment, energy dispatch, and freight routing.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FCF1D0" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Real-Time Solver:</strong> GPU-accelerated quadratic and linear programming solvers converge in milliseconds.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Graphic: Interactive Optimization Allocation Bars & Constraint Slider -->
+          <div class="module-graphic-panel">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <span class="font-mono" style="font-size: 0.8rem; color: var(--color-accent); font-weight: 700;">DYNAMIC ALLOCATION SOLVER</span>
+              <span class="badge" style="font-size: 0.7rem; padding: 2px 8px;">QUADRATIC CONVERGED</span>
+            </div>
+
+            <!-- Allocation Bars -->
+            <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 16px;">
+              <div class="bar-metric-row">
+                <div class="bar-metric-info">
+                  <span>Inventory Replenishment</span>
+                  <span class="font-mono bar-pct">44%</span>
+                </div>
+                <div class="bar-track">
+                  <div class="bar-fill" id="optBarInventory" style="width: 44%;"></div>
+                </div>
+              </div>
+
+              <div class="bar-metric-row">
+                <div class="bar-metric-info">
+                  <span>Logistics & Freight</span>
+                  <span class="font-mono bar-pct">31%</span>
+                </div>
+                <div class="bar-track">
+                  <div class="bar-fill" id="optBarLogistics" style="width: 31%;"></div>
+                </div>
+              </div>
+
+              <div class="bar-metric-row">
+                <div class="bar-metric-info">
+                  <span>Production Scheduling</span>
+                  <span class="font-mono bar-pct">50%</span>
+                </div>
+                <div class="bar-track">
+                  <div class="bar-fill" id="optBarProduction" style="width: 50%;"></div>
+                </div>
+              </div>
+
+              <div class="bar-metric-row">
+                <div class="bar-metric-info">
+                  <span>Capital Reserve Buffer</span>
+                  <span class="font-mono bar-pct">60%</span>
+                </div>
+                <div class="bar-track">
+                  <div class="bar-fill" id="optBarReserve" style="width: 60%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive Constraint Slider -->
+            <div class="interactive-slider-box">
+              <div class="slider-label-row">
+                <label for="budgetConstraintSlider" class="font-mono" style="font-size: 0.8rem;">Budget Constraint Ceiling:</label>
+                <span id="budgetSliderVal" class="font-mono" style="font-weight: 700; color: var(--color-accent);">$1.2M</span>
+              </div>
+              <input type="range" id="budgetConstraintSlider" class="range-slider" min="500" max="3000" step="100" value="1200">
+            </div>
+          </div>
+        </div>
+
+        <!-- Module 5: Scenario Comparison & Dashboard -->
+        <div class="module-row fade-up">
+          <div class="module-info">
+            <div class="badge">Module 05</div>
+            <h3>Scenario Comparison & Dashboard</h3>
+            <p>
+              Compare alternative strategic pathways side-by-side. Make decisions with complete clarity on trade-offs between risk and upside.
+            </p>
+            <ul class="module-bullets">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FCF1D0" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Side-by-Side Matrix:</strong> Compare Baseline, Accelerated, and Risk-Mitigated scenarios together.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FCF1D0" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Delta Quantification:</strong> Computes net differences in expected ROI, fill rate, and costs.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FCF1D0" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Recent Scenario Activity:</strong> Live activity feed documenting team submissions and comparisons.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FCF1D0" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Executive Export:</strong> Export boardroom comparison decks and auditable CSV bundles.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Graphic: Comparison Bar Chart with Scenario Toggle -->
+          <div class="module-graphic-panel">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+              <span class="font-mono" style="font-size: 0.8rem; color: var(--color-accent); font-weight: 700;">SCENARIO BENCHMARK</span>
+              <div style="display: flex; gap: 6px;">
+                <button class="btn btn-outline btn-sm prod-sc-btn active" data-sc="A" style="padding: 4px 8px; font-size: 0.72rem;">Scen A</button>
+                <button class="btn btn-outline btn-sm prod-sc-btn" data-sc="B" style="padding: 4px 8px; font-size: 0.72rem;">Scen B</button>
+                <button class="btn btn-outline btn-sm prod-sc-btn" data-sc="C" style="padding: 4px 8px; font-size: 0.72rem;">Scen C</button>
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 16px;">
+              <div style="background: var(--color-bg); padding: 10px; border-radius: 6px; text-align: center; border: 1px solid var(--color-primary-40);">
+                <div class="text-dim font-mono" style="font-size: 0.7rem;">EXPECTED ROI</div>
+                <div id="prodRoiVal" class="font-mono" style="font-size: 1.15rem; color: var(--color-accent); font-weight: 700; margin-top: 4px;">24.2%</div>
+              </div>
+              <div style="background: var(--color-bg); padding: 10px; border-radius: 6px; text-align: center; border: 1px solid var(--color-primary-40);">
+                <div class="text-dim font-mono" style="font-size: 0.7rem;">SERVICE FILL</div>
+                <div id="prodFillVal" class="font-mono" style="font-size: 1.15rem; color: var(--color-accent); font-weight: 700; margin-top: 4px;">91.5%</div>
+              </div>
+              <div style="background: var(--color-bg); padding: 10px; border-radius: 6px; text-align: center; border: 1px solid var(--color-primary-40);">
+                <div class="text-dim font-mono" style="font-size: 0.7rem;">EST. EXPENSE</div>
+                <div id="prodCostVal" class="font-mono" style="font-size: 1.15rem; color: var(--color-accent); font-weight: 700; margin-top: 4px;">$8.4M</div>
+              </div>
+            </div>
+
+            <div style="height: 110px; display: flex; align-items: flex-end; justify-content: space-around; padding: 10px 0; border-bottom: 1px solid var(--color-primary-40);">
+              <div style="width: 22%; height: 75%; background: var(--color-primary); border-radius: 4px 4px 0 0; position: relative;">
+                <span class="font-mono" style="position: absolute; top: -18px; left: 50%; transform: translateX(-50%); font-size: 0.72rem; color: var(--color-accent);">Base</span>
+              </div>
+              <div style="width: 22%; height: 95%; background: var(--color-accent); border-radius: 4px 4px 0 0; position: relative;">
+                <span class="font-mono" style="position: absolute; top: -18px; left: 50%; transform: translateX(-50%); font-size: 0.72rem; color: var(--color-bg); font-weight: 700;">Opt</span>
+              </div>
+              <div style="width: 22%; height: 60%; background: var(--color-primary-60); border-radius: 4px 4px 0 0; position: relative;">
+                <span class="font-mono" style="position: absolute; top: -18px; left: 50%; transform: translateX(-50%); font-size: 0.72rem; color: var(--color-accent-75);">Min</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Module 6: History & Access Management -->
+        <div class="module-row reversed fade-up">
+          <div class="module-info">
+            <div class="badge">Module 06</div>
+            <h3>History & Access Management</h3>
+            <p>
+              Maintain a tamper-evident audit record of every mathematical forecast, parameter change, and scenario execution across your team.
+            </p>
+            <ul class="module-bullets">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FCF1D0" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Forecast Versioning:</strong> Every model run is cryptographically tagged with input schemas.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FCF1D0" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Scenario Rollbacks:</strong> Revert any optimization to a historical snapshot with one click.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FCF1D0" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>User Activity Tracking:</strong> Granular access logs detailing who edited bounds and when.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FCF1D0" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Role-Based Access:</strong> Enforce strict Viewer, Model Builder, and Sign-Off Approver permissions.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Graphic: Animated Timeline -->
+          <div class="module-graphic-panel">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+              <span class="font-mono" style="font-size: 0.8rem; color: var(--color-accent); font-weight: 700;">AUDIT LINEAGE // COMMITS</span>
+              <span class="badge" style="font-size: 0.7rem; padding: 2px 8px;">IMMUTABLE</span>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 14px; position: relative; padding-left: 18px; border-left: 2px solid var(--color-primary);">
+              <div style="position: relative;">
+                <span style="position: absolute; left: -24px; top: 3px; width: 10px; height: 10px; border-radius: 50%; background: var(--color-accent);"></span>
+                <div style="display: flex; justify-content: space-between; font-size: 0.78rem; font-family: var(--font-mono); color: var(--color-accent-60);">
+                  <span>COMMIT #9a8f2</span>
+                  <span>10m ago</span>
+                </div>
+                <div style="font-size: 0.88rem; color: var(--color-accent); font-weight: 600; margin-top: 2px;">Scenario C Constraints Tightened</div>
+                <div class="text-dim" style="font-size: 0.78rem;">By: M. Vance (Lead) • Buffer increased to 12%</div>
+              </div>
+
+              <div style="position: relative;">
+                <span style="position: absolute; left: -24px; top: 3px; width: 10px; height: 10px; border-radius: 50%; background: var(--color-primary);"></span>
+                <div style="display: flex; justify-content: space-between; font-size: 0.78rem; font-family: var(--font-mono); color: var(--color-accent-60);">
+                  <span>COMMIT #7d3e1</span>
+                  <span>2h ago</span>
+                </div>
+                <div style="font-size: 0.88rem; color: var(--color-accent); font-weight: 600; margin-top: 2px;">Q3 Demand Model Re-Tuned</div>
+                <div class="text-dim" style="font-size: 0.78rem;">By: E. Rostova • MAPE improved to 2.48%</div>
+              </div>
+
+              <div style="position: relative;">
+                <span style="position: absolute; left: -24px; top: 3px; width: 10px; height: 10px; border-radius: 50%; background: var(--color-primary-60);"></span>
+                <div style="display: flex; justify-content: space-between; font-size: 0.78rem; font-family: var(--font-mono); color: var(--color-accent-60);">
+                  <span>COMMIT #4c11b</span>
+                  <span>Yesterday</span>
+                </div>
+                <div style="font-size: 0.88rem; color: var(--color-accent); font-weight: 600; margin-top: 2px;">Initial Dataset Ingestion Verified</div>
+                <div class="text-dim" style="font-size: 0.78rem;">By: D. Chen • 24 Time-series validated</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. TECHNOLOGY FOUNDATION -->
+    <section class="section-bg-surface" id="technology-foundation">
+      <div class="container">
+        <div class="section-header fade-up">
+          <div class="badge">Hardware & Accelerated Compute</div>
+          <h2>Technology Foundation</h2>
+          <p>
+            Engineered upon high-performance GPU and parallel computation architectures to deliver real-time optimization over massive quantitative workloads.
+          </p>
+        </div>
+
+        <div class="duotone-container fade-up" style="height: 380px; margin-bottom: 40px; box-shadow: var(--shadow-card);">
+          <img src="/assets/images/tech-datacenter.jpg" alt="High performance computing AI data center server racks" class="duotone-img" loading="lazy">
+          <div class="duotone-overlay"></div>
+          <div class="duotone-tint"></div>
+        </div>
+
+        <div class="tech-grid">
+          <!-- Card 1: RAPIDS -->
+          <div class="tech-card fade-up">
+            <div class="tech-card-badge">RAPIDS</div>
+            <p>
+              Supports accelerated processing and analysis of large quantitative and operational datasets with zero CPU memory transfer bottlenecks.
+            </p>
+          </div>
+
+          <!-- Card 2: cuML -->
+          <div class="tech-card fade-up delay-100">
+            <div class="tech-card-badge">cuML</div>
+            <p>
+              Supports accelerated machine learning and statistical workflows within forecasting and analytical processes, speeding up regression pipelines.
+            </p>
+          </div>
+
+          <!-- Card 3: CUDA -->
+          <div class="tech-card fade-up delay-200">
+            <div class="tech-card-badge">CUDA</div>
+            <p>
+              Provides accelerated computation for forecasting, optimization, and data-processing workloads directly on NVIDIA tensor cores.
+            </p>
+          </div>
+
+          <!-- Card 4: Triton -->
+          <div class="tech-card fade-up delay-300">
+            <div class="tech-card-badge">Triton</div>
+            <p>
+              Provides scalable model serving for supported forecasting and analytical inference workloads with dynamic batching and low latency.
+            </p>
+          </div>
+        </div>
+
+        <div class="tech-disclaimer fade-up">
+          * These technologies are presented as the platform's technology foundation and do not imply endorsement, partnership or certification. Final compatibility is confirmed through technical implementation and testing.
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. TECHNICAL ARCHITECTURE -->
+    <section class="section-bg-main" id="architecture">
+      <div class="container">
+        <div class="section-header fade-up">
+          <div class="badge">System Architecture</div>
+          <h2>Full-Stack Quantitative Engineering Architecture</h2>
+          <p>
+            A cohesive four-tier blueprint connecting responsive user workspaces with accelerated GPU compute and resilient SQL storage.
+          </p>
+        </div>
+
+        <div class="arch-layers fade-up">
+          <!-- Layer 1 -->
+          <div class="arch-layer">
+            <div class="arch-layer-head">
+              <span class="arch-layer-title">Layer 1: Experience & Workspace Tier</span>
+              <span class="badge" style="font-size: 0.7rem; padding: 2px 8px;">PRESENTATION</span>
+            </div>
+            <div class="arch-layer-tags">
+              <span class="arch-chip">Responsive Web Interface</span>
+              <span class="arch-chip">Interactive Time-Series Canvas</span>
+              <span class="arch-chip">Role-Based Access Authentication</span>
+              <span class="arch-chip">Scenario Comparison Boardroom Decks</span>
+            </div>
+          </div>
+
+          <!-- Layer 2 -->
+          <div class="arch-layer">
+            <div class="arch-layer-head">
+              <span class="arch-layer-title">Layer 2: Platform Application & Business Logic Tier</span>
+              <span class="badge" style="font-size: 0.7rem; padding: 2px 8px;">APPLICATION</span>
+            </div>
+            <div class="arch-layer-tags">
+              <span class="arch-chip">PHP / Laravel Backend Core</span>
+              <span class="arch-chip">Dataset & Variable Management Engine</span>
+              <span class="arch-chip">Forecasting Project Orchestrator</span>
+              <span class="arch-chip">Optimization Objective & Constraint Manager</span>
+              <span class="arch-chip">Scenario Versioning & Audit Logger</span>
+            </div>
+          </div>
+
+          <!-- Layer 3 -->
+          <div class="arch-layer" style="border-color: var(--color-accent-40); box-shadow: var(--shadow-glow);">
+            <div class="arch-layer-head">
+              <span class="arch-layer-title">Layer 3: GPU Compute & Accelerated Analytics Tier</span>
+              <span class="badge" style="font-size: 0.7rem; padding: 2px 8px; background: var(--color-primary); color: var(--color-accent);">GPU CORE</span>
+            </div>
+            <div class="arch-layer-tags">
+              <span class="arch-chip">NVIDIA CUDA Accelerated Computation</span>
+              <span class="arch-chip">RAPIDS-Based Processing Pipelines</span>
+              <span class="arch-chip">cuML Accelerated Modeling Workflows</span>
+              <span class="arch-chip">Triton Inference Serving Engine</span>
+              <span class="arch-chip">Mixed-Integer Quadratic Programming Solver</span>
+            </div>
+          </div>
+
+          <!-- Layer 4 -->
+          <div class="arch-layer">
+            <div class="arch-layer-head">
+              <span class="arch-layer-title">Layer 4: Storage, Audit & Integration Tier</span>
+              <span class="badge" style="font-size: 0.7rem; padding: 2px 8px;">DATA & SECURITY</span>
+            </div>
+            <div class="arch-layer-tags">
+              <span class="arch-chip">SQL-Based Structured Storage</span>
+              <span class="arch-chip">Forecast Result Storage</span>
+              <span class="arch-chip">Permanent Historical Ledger</span>
+              <span class="arch-chip">Enterprise REST API Gateway</span>
+              <span class="arch-chip">Integration-Ready Warehouse Connectors</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. GOVERNANCE & ENTERPRISE READINESS (PRODUCT DEEP) -->
+    <section class="section-bg-surface" id="enterprise-governance">
+      <div class="container">
+        <div class="section-header fade-up">
+          <div class="badge">Institutional Trust</div>
+          <h2>Enterprise Security & Compliance Framework</h2>
+          <p>
+            Purpose-built for institutional risk officers and IT compliance managers who require total visibility and control over financial and operational planning models.
+          </p>
+        </div>
+
+        <div class="gov-grid">
+          <div class="gov-card fade-up">
+            <div class="gov-icon"><img src="/assets/icons/dataset-access.svg" alt="" width="22" height="22"></div>
+            <h4>Controlled Dataset Access</h4>
+            <p>Enforce strict project boundaries. Analysts only access verified datasets mapped directly to their enterprise role.</p>
+          </div>
+          <div class="gov-card fade-up delay-100">
+            <div class="gov-icon"><img src="/assets/icons/forecasting-records.svg" alt="" width="22" height="22"></div>
+            <h4>Structured Forecasting Records</h4>
+            <p>Every generated prediction curve is stored with its exact hyperparameter snapshot, seeds, and training duration.</p>
+          </div>
+          <div class="gov-card fade-up delay-200">
+            <div class="gov-icon"><img src="/assets/icons/optimization-traceability.svg" alt="" width="22" height="22"></div>
+            <h4>Forecast & Optimization Traceability</h4>
+            <p>Inspect mathematical constraint slack, shadow costs, and objective tradeoffs before publishing executive decisions.</p>
+          </div>
+          <div class="gov-card fade-up delay-300">
+            <div class="gov-icon"><img src="/assets/icons/scenario-history.svg" alt="" width="22" height="22"></div>
+            <h4>Scenario History & Rollbacks</h4>
+            <p>Full lineage tracking lets modelers compare changes between revisions and revert to past configurations safely.</p>
+          </div>
+          <div class="gov-card fade-up">
+            <div class="gov-icon"><img src="/assets/icons/activity-tracking.svg" alt="" width="22" height="22"></div>
+            <h4>User Activity Tracking</h4>
+            <p>Comprehensive SIEM-compatible audit logs recording every login, dataset download, and scenario execution.</p>
+          </div>
+          <div class="gov-card fade-up delay-100">
+            <div class="gov-icon"><img src="/assets/icons/role-access.svg" alt="" width="22" height="22"></div>
+            <h4>Role-Based Access Control</h4>
+            <p>Granular RBAC distinguishing between Viewer, Analyst, Optimization Specialist, and Security Admin privileges.</p>
+          </div>
+          <div class="gov-card fade-up delay-200">
+            <div class="gov-icon"><img src="/assets/icons/result-storage.svg" alt="" width="22" height="22"></div>
+            <h4>Consistent Result Storage</h4>
+            <p>Zero floating-point degradation across database storage routines, ensuring repeatable mathematical outputs.</p>
+          </div>
+          <div class="gov-card fade-up delay-300">
+            <div class="gov-icon"><img src="/assets/icons/enterprise-architecture.svg" alt="" width="22" height="22"></div>
+            <h4>Enterprise Deployment Suitability</h4>
+            <p>Proven architecture compatible with private VPCs, air-gapped secure labs, and sovereign cloud mandates.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. BOTTOM CTA BLOCK -->
+    <section class="section-bg-main">
+      <div class="container">
+        <div class="product-cta-banner fade-up">
+          <h2>Ready to Unify Your Quantitative Forecasts & Scenarios?</h2>
+          <p class="text-muted">
+            Step into Quantiva's application workspace to configure time-series models, solve multi-objective constraints, and evaluate strategic decisions with complete confidence.
+          </p>
+          <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+            <a href="https://portal.quantiva.lk" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 16px 36px; font-size: 1.05rem;">
+              Go to Dashboard
+              <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="/#contact" class="btn btn-outline" style="padding: 16px 32px; font-size: 1.05rem;">
+              Talk to Sales
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SHARED FOOTER -->
+  <footer class="footer-main">
+    <svg class="footer-watermark" viewBox="0 0 1200 240" fill="none" preserveAspectRatio="none">
+      <path d="M0,180 Q200,60 400,140 T800,90 T1200,120" stroke="#FCF1D0" stroke-width="2" stroke-dasharray="8 8"/>
+      <path d="M0,200 Q200,120 400,180 T800,130 T1200,160" stroke="#22396F" stroke-width="3"/>
+    </svg>
+
+    <div class="container footer-content">
+      <!-- Newsletter Band -->
+      <div class="newsletter-band">
+        <div>
+          <h3 style="font-size: 1.45rem; margin-bottom: 8px;">Forecasts, Frameworks & Field Notes</h3>
+          <p class="text-muted" style="font-size: 0.92rem;">
+            Curated quantitative insights, mathematical framework breakdowns, product releases, and algorithm updates delivered bi-weekly.
+          </p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" id="newsletterEmail" name="email" class="form-input" placeholder="Enter your work email" required>
+          <button type="submit" class="btn btn-primary" id="newsletterBtn" style="white-space: nowrap;">
+            <span>Subscribe</span>
+          </button>
+        </form>
+      </div>
+
+      <!-- 4-Column Grid -->
+      <div class="footer-grid">
+        <!-- Col 1: Logo & Company Blurb -->
+        <div class="footer-col">
+          <a href="/" class="nav-logo" style="margin-bottom: 16px;">
+            <img src="/assets/brand/logo.png" alt="Quantiva" class="nav-logo-img" width="154" height="40">
+          </a>
+          <p style="font-size: 0.88rem; color: var(--color-accent-75); line-height: 1.6; margin-bottom: 16px;">
+            AI Quantitative Forecasting & Optimization platform bringing datasets, forecasting projects, and scenario history into one workspace.
+          </p>
+          <div class="office-info">
+            <strong>Sri Lanka:</strong> No. 74, Horizon Drive, Pannipitiya<br>
+            <strong>USA:</strong> 777 S Alameda Street, Los Angeles, CA
+          </div>
+        </div>
+
+        <!-- Col 2: Platform -->
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <ul class="footer-links">
+            <li><a href="/#use-cases" class="footer-link">Use Cases</a></li>
+            <li><a href="/#capabilities" class="footer-link">Capabilities</a></li>
+            <li><a href="/#pricing" class="footer-link">Pricing</a></li>
+            <li><a href="/product/" class="footer-link">Product Overview</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Company -->
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="/#about" class="footer-link">About Us</a></li>
+            <li><a href="/#contact" class="footer-link">Contact</a></li>
+            <li><a href="/#faq" class="footer-link">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Legal -->
+        <div class="footer-col">
+          <h4>Legal & Compliance</h4>
+          <ul class="footer-links">
+            <li><a href="/privacy/" class="footer-link">Privacy Policy</a></li>
+            <li><a href="/terms/" class="footer-link">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          © 2026 Quantiva Analytics (Pvt) Ltd. All rights reserved.
+        </div>
+        <div class="footer-socials">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- COOKIE CONSENT BANNER -->
+  <aside class="cookie-banner" id="cookieBanner" aria-label="Cookie consent">
+    <div class="cookie-content">
+      <p>
+        Quantiva uses operational and analytical cookies strictly to improve workspace responsiveness and preserve your session preferences.
+      </p>
+      <div class="cookie-actions">
+        <button class="btn btn-primary" id="cookieAccept">Accept All</button>
+        <button class="btn btn-outline" id="cookieDecline">Decline Non-Essential</button>
+      </div>
+    </div>
+  </aside>
+
+  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="/src/product.js"></script>
+  <script>
+    window.chatwootSettings = {"position":"right","type":"standard","launcherTitle":""};
+    (function(d,t) {
+      var BASE_URL="https://app.chatwoot.com";
+      var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=BASE_URL+"/packs/js/sdk.js";
+      g.async = true;
+      s.parentNode.insertBefore(g,s);
+      g.onload=function(){
+        window.chatwootSDK.run({
+          websiteToken: 'TLmmEhHTqV3hysagMz733cF7',
+          baseUrl: BASE_URL
+        })
+      }
+    })(document,"script");
+  </script>
+</body>
+</html>
